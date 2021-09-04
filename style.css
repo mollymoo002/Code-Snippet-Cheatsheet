@@ -1,0 +1,88 @@
+:root {
+    --text-color: aquamarine;
+    --background-color: rgb(95, 95, 95);
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background: var(--background-color);
+}
+
+.page-title {
+    font-weight: bold;
+    color:var(--text-color);
+    /*border: 1px dotted orange;*/
+    text-align: center;
+}
+
+header p {
+    color: white;
+    /*border: 1px dotted purple;*/
+    text-align: center;
+}
+
+.row {
+    /*border: 1px dotted red;*/
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.card-column {
+    /*border: 1px dotted blue;*/
+    flex: 1 0 500px;
+}
+
+
+.card-header {
+    border: 3px solid black;
+    border-radius: 8px;
+    color:var(--text-color);
+}
+
+.card {
+    border: 3px dotted black;
+    border-top: 0;
+}
+
+.card:hover {
+    box-shadow: rgba(83, 226, 202, 0.35) 0px 5px 15px;
+}
+
+.card-body p {
+    color:var(--text-color);
+    /*border: 1px dotted pink;*/
+}
+
+.code-block {
+    background: linear-gradient(#148664, #54c482);
+    /*border: 1px solid black;*/
+    border-radius: 8px;
+    color: white;
+}
+
+.code-block code {
+    -webkit-user-select: all;  
+    -moz-user-select: all;    
+    -ms-user-select: all;     
+    user-select: all; 
+}
+
+footer {
+    text-align: center;
+    color: var( --text-color);
+}
+
+@media screen and (max-width: ) {
+    main {
+        flex-direction: column;
+    }
+}
